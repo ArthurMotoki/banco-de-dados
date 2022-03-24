@@ -11,14 +11,20 @@
     <main>
         <h1 style="text-align: center;">Banco de Dados</h1>
         
+        <br>
+       
         <p><strong>SGBD=</strong>Sistemas Gerenciadores de Banco de Dados</p>
         
         <p>Lembre-se que dado é o que está armazenado no banco de dados e informação é o significado dos dados.</p>
+       
+        <br>
         
         <h2>Introdução a Unidade</h2>
         
         <p>Banco de dados é um sistema de armazenamento de dados cujo objetivo é registrar e guardar informações importantes que poderão ser acessadas quando necessário. Os bancos de dados são amplamente usados, formando uma parte essencial de quase todas as empresas.</p>
-        
+       
+        <br>
+       
         <ul>
             <li><span class="negrito">Instituições Financeiras (bancos)</span>: utilizam o banco de dados para o devido armazenamento de informações de seus clientes, suas respectivas contas, empréstimos e transações bancárias.</li>
             <br>
@@ -36,25 +42,111 @@
             <br>
             <li><span class="negrito">Recursos Humanos</span>: emprega banco de dados para armazenar e gerenciar informações referentes aos funcionários, salários, descontos em folha de pagamento, benefícios, e também para a geração de contra cheques.</li>
         </ul>
+       
+        <br>
         
         <p>Utilizar os termos <span class="negrito">banco de dados</span> e <span class="negrito">base de dados</span> como sinônimos é um erro, pois o gerenciamento de uma base de dados utiliza, normalmente, ferrementas de apoio integradas à tomadas de decisão organizacional. Entretanto, o gerenciamento de um banco de dados é obtito por meio de sistemas de gerenciamento de bancos de dados.</p>
-
+        <br>
         <h2>Diferença entre dados e e informações</h2>
-
+        
+        <br>
+       
         <p>Os dados são considerados fatos brutos, isso quer dizer que os fatos ainda não foram processados para revelar seu significado. Para reveler seu significado, os dados brutos são processados de maneira apropriada, gerando, assim, as informações. As informações necessitam conhecer seu contexto para revelar seu significado adequado. O simples fato de obtermos uma temperatura média de 95°, por exemplo, pode ser considerado um dado específico sem significado algum, a menos que saibamos seu contexto: encontra-se em graus Fahrenheit ou Celsius? Está vinculada à temperatura de
         um hardware ou de um corpo humano? </p>
 
         <h2>Classificação dos bancos de dados por números de usuários.</h2>
-
-       <ol>
+        
+        <br>
+       
+        <ol>
            <li><span class="negrito">Banco de dados monousuário (de um único usuário):</span> suporta apenas um usuário porvez. Por exemplo, se o usuário Pedro estiver utilizando o banco de dados, os usuários Regina e Douglas precisam esperar o usuário Pedro finalizar sua consulta.</li>
 
            <li>
             <span class="negrito">Banco de dados multiusuário:</span> dá suporte a diversos usuários simultaneamente. Por exemplo, os usuários Pedro, Regina e Douglas poderão utilizar o banco de dados ao mesmo tempo. 
            </li>
        </ol>
-
+       
+       <br>
+      
        <p>A maneira mais usual de classificar os banco de dados são como estes serão utilizados e na sensibilidade ao tempo das informações coletadas. Podemos detalhar essa classificação como: </p>
+       <br>
+       <ol>
+           <li><span class="negrito" >Banco de dados operacionais:</span> projetados para o dia a dia da empresa. Também podem ser chamados de banco de dados transacionais ou de produção</li>
 
+           <li><span class="negrito">Data Warehouse (armazém de dados):</span> Armazena dados utéis para a geração de informações necessárias à tomada de decisões táticas e estratégicas. </li>
+
+           <li><span class="negrito">Banco de dados temporais:</span> São dados que permitem o usuário a consulta atuais e passadas do banco de dados, pois armazenam histórico das alterações. Exemplo: Evolução de um paciente </li>
+
+           <li><span class="negrito">Banco de dados espacias</span> Consulta de dados de um espaço multidimencional. É o caso dos bancos de dados geográficos</li>
+
+           <li><span class="negrito">Banco de dados meteorológicos:</span> Armazenam dados sobre o tempo</li>
+
+           <li><span class="negrito"></span>Bancos de dados de multimídias: são aqueles que armazenam os dados sob a forma de imagens, vídeos, músicas, textos falados ou escritos, entre outros</li>
+
+           <li><span class="negrito">Banco de dados especialistas</span>: também conhecidos como sistemas baseados em conhecimento, são aqueles que, por meio de técnicas aplicadas na área da Inteligência Artificial, incorporam raciocínio e inferência (capacidade de dedução).</li>
+       </ol>
+       
+       <br>
+      
+       <p>Os bancos de dados também podem ser classificados de acordo como os dados são estruturados. Dados não estruturados são aqueles que existem em seu estado original (estado bruto), no formato em que foram coletados. Entretanto, esse formato não permite o processamento adequado para produzir informações. Já os dados estruturados são o resultado da obtenção de dados não estruturados, como também sua formatação, facilitando, assim, o armazenamento, a manipulação e a geração de informações. Podemos utilizar, como exemplo, o valor de um dado específico, como o valor 140070131, o qual pode referir-se a um CEP, um valor de vendas ou um código de um determinado produto. Por um lado, caso represente um CEP ou um código de produto e for armazenado como texto, não será permitido a realização de cálculos matemáticos com ele. Por outro lado, se o mesmo valor representar uma transação de vendas, torna-se necessário formatá-lo como numérico.</p>
+       
+       <br>
+      
+       <p>A maioria dos dados encontrados são classificados como semiestruturados, que são aqueles parcialmente processados</p>
+       
+       <br>
+      
+       <h2>Sistemas de Arquivo Versus SGBDS</h2>
+      
+       <br>
+       
+       <p>FAT, FAT 32, NTFS, SQL Server, Oracle e MySQL, são sistemas que tem um objetivo em comum: organizar e armazenar dados em sistemas computacionais, elas fazem parte de dois sitemas para o controle de informaçao, o Sistema de Arquivo e o Sistema Gerenciador de Banco de Dados (SGBD).</p>
+
+       <p>O Sistema de arquivos organiza e armazena informações seguindo uma estrutura lógica para alocação física dos arquivos em dispositivos de armazenamento, como o disco rígido e o CD-ROM</p>
+
+       <p>O controle de acesso aos discos de armazenamento é realizado por sistemas operacionais.</p>
+
+       <p>Existem sistemas de arquivos que talvez você use no seu dia a dia, como o FAT(File Allocation Table), FAT32 e NTFS((New Technology File System) presentes no Windows. </p>
+
+       <p>Os sistemas de arquivos funcionam por meio de uma espécie de tabela, que contém indicações da localização das informações de cada arquivo. Quando um arquivo é salvo em um disquete</p>
+
+       <p>Arquitetura de sistemas é a forma como o sistema terá os seus componentes organizados e estruturados para realizar a tarefa determinada. A arquitetura contém um plano e uma lógica, em que o sistema desenvolvido executará suas atividades.</p>
+
+       <p>O sistema de arquivos foi uma das primeiras arquiteturas de sistemas para armazenamento e manipulação de dados e geração de informação, e, ao longo do tempo, sofreu alterações e foi adaptado conforme a evolução tecnológica. No entanto, alguns problemas ainda são encontrados, tais como:</p>
+       
+       <br>
+
+       <ol>
+           <li>A manutenção: ela é prejudicada, pois a estrutura de arquivos é definida e padronizada no próprio código do aplicativo.</li>
+
+           <li>O compartilhamento de um arquivo por vários programas: apresenta dificuldades
+            para gerenciar o acesso a esses arquivos e seu controle.</li>
+
+           <li>As incompatibilidades nos aplicativos</li>
+
+           <li>A inconsistência (aplicativos com informações incorretas), o isolamento de dados (formatos distintos), a redundância (dados repetidos) e os problemas com segurança (fácil acesso aos registros do sistema).</li>
+
+           <li>A falta de gerenciamento para acessos concorrentes (vários usuários acessando a mesma informação) aos dados e recuperação de dados.</li>
+       </ol>
+       
+       <br>
+
+       <p>O SGBD surgiu como uma evoluçaõ dos Sitemas de Arquivos, criando novas estruturas de dados com o objetivo de gerenciar todo o armazenamento de informações.</p>
+
+       <p>O SGBD é uma coleção de programas que permite ao usuário definir, construir e manipular bases de dados para as mais diversas finalidades</p>
+
+       <p>Vantagens na utilização em aplicações computacionais</p>
+       <br>
+       <ol>
+           <li>compartilhamento de dados para diversas aplicações e usuários</li>
+
+           <li>Integra as visões dos dados dos diferentes usuários em um único repositório de dados.</li>
+
+           <li>Fornece modelos adequados para melhor aplicar as políticas de privacidade e segurança de dados.</li>
+
+           <li>Reduz a inconsistência dos dados</li>
+           
+           <li>Dados bem gerenciados e com acesso aprimorado permitem a geração de informações de melhor qualidade, que, por sua vez, auxiliam na tomada de decisões.</li>
+       </ol>
     </main>
 </html>
