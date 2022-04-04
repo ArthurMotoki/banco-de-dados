@@ -148,5 +148,48 @@
            
            <li>Dados bem gerenciados e com acesso aprimorado permitem a geração de informações de melhor qualidade, que, por sua vez, auxiliam na tomada de decisões.</li>
        </ol>
+       <br>
+       <p>O SGBD solucionou problemas dos sitemas de arquivo, tais como: integração de dados(mesmo local,) dados duplicados, independência de dados e aplicativos e representação das perspectivas do usuário.</p>
+       <p>Os usuários que trabalham com o SGBDs devem ter conhecimento e domínio dos recursos para usufluir de todas as vantagens que o sistema proporciona, como:</p>
+       <br>
+       <ol>
+           <li>Rapidez no acesso às informações presentes no banco de dados</li>
+
+           <li>Redução de problemas de integridade e redundância</li>
+
+           <li>Diminuir oo esforço humano no desenvolvimento</li>
+
+           <li>Utilização dos dados e controle integrado de informações distrubuídas fisicamente</li>
+       </ol>
+       <br>
+       <p>Desconhecer o funcionamento do SGBD pode acarretar o mau desenvolvimento e afetar a segurança de acesso às informações.</p>
+       <br>
+       <h2>Níveis de Abstração de Dados</h2>
+       <br>
+       <p>Normalmente, quando constituímos um projeto de banco de dados, iniciamos apartir de uma visão abstrata do ambiente como um todo, acrescentando detalhes à medida que o projeto evolui. Utilizar níveis de abstração de dados pode ser de extremamente útil no que diz respeito à integração de visões múltiplas de dados, como podemos presenciar em distintos níveis de uma empresa.</p>
+       <br>
+       <h2>Modelo Externo</h2>
+       <br>
+       <p>Esse modelo é considerado a perspectiva dos usuários finais do ambiente de dados. Usuários finais é o termo dado às pessoas que fazem uso de aplicativos para manipular os dados, gerando, assim, as informações necessárias para o cenário empresarial. </p>
+       <p>Normalmente, as empresas são segmentadas em diversas unidades comerciais, como: vendas, finanças e marketing, em que cada unidade pode estar sujeita a restrições e exigências específicas. Dessa maneira, os usuários finais podem visualizar apenas seus subconjuntos de dados específicos, separados das outras unidades da empresa.</p>
+       <br>
+       <div><img src="img/Screenshot_1.png" alt=""></div>
+       <br>
+       <p>Na Figura 4, imagine os esquemas externos de duas unidades comerciais correspondentes a uma instituição acadêmica: registro de alunos e agendamento de turmas. Cada esquema externo inclui as entidades, relacionamentos e restrições determinadas pela unidade comercial(departamento). Observamos que, embora as visões das aplicações sejam isoladas, cada visão compartilha sua unidade com a outra (os esquemas externos pertinentes ao registro de alunos e o agendamento de turmas compartilham as entidades TURMA e DISCIPLINA).
+        </p>
+        <p>Em detalhes, podemos descrever as entidades-relacionamentos representados pela Figura 4</p>
+        <ol>
+            <li>Um PROFESSOR ensina muitas TURMAs, porém, cada TURMA é ensinada por apenas um PROFESSOR. Ou seja, existe um relacionamento 1:M entre PROFESSOR e TURMA.</li>
+
+            <li>Uma TURMA pode receber a MATRÍCULA de diversos alunos, e para cada aluno é permitida a MATRÍCULA em várias TURMAs, formando, assim, um relacionamento M:N entre ALUNO e TURMA</li>
+
+            <li>Para cada DISCIPLINA é permitida a geração de muitas TURMAs, mas cada TURMA se refere apenas a uma DISCIPLINA, conforme pode ser observado na cardinalidade mínima e máxima.</li>
+
+            <li>Por fim, uma TURMA normalmente necessita de uma SALA, mas uma SALA pode ser reservada para várias TURMAs. Ou seja, cada sala de aula pode ser utilizada por diversas turmas, uma em cada horário, por exemplo. Dessa forma, podemos identificar a existência de um relacionamento 1:M entre SALA e TURMA.</li>
+        </ol>
+        <br>
+        <h2>Modelo Interno</h2>
+        <br>
+        <p>Nessa fase, normalmente já definimos qual tecnologia de Sistema de Gerenciamento de Banco de Dados (SGBD) será utilizada. O modelo interno realiza o mapeamento do modelo conceitual para o SGBD específico.</p>
     </main>
 </html>
